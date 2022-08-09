@@ -1,0 +1,42 @@
+Para cambiar el modo de autenticación de seguridad
+
+   1.
+
+      En el Explorador de objetos de SQL Server Management Studio, haga clic con el botón secundario en el servidor y, a continuación, haga clic en Propiedades.
+   2.
+
+      En la página Seguridad, bajo Autenticación de servidor, seleccione el nuevo modo de autenticación del servidor y haga clic en Aceptar.
+   3.
+
+      En el cuadro de diálogo SQL Server Management Studio, haga clic en Aceptar para confirmar el requisito de reiniciar SQL Server.
+
+Para reiniciar SQL Server desde SQL Server Management Studio
+
+    *
+
+      En el Explorador de objetos, haga clic con el botón secundario en el servidor y, a continuación, haga clic en Reiniciar. Si el Agente SQL Server se está ejecutando, también debe reiniciarse.
+
+Para habilitar el inicio de sesión de sa mediante Transact-SQL
+
+    *
+
+      Ejecute las siguientes instrucciones para habilitar el inicio de sesión de sa y asignarle una contraseña.
+      Copiar
+
+      ALTER LOGIN sa ENABLE ;
+      GO
+      ALTER LOGIN sa WITH PASSWORD = '<enterStrongPasswordHere>' ;
+      GO
+
+
+Para habilitar el inicio de sesión de sa mediante Management Studio
+
+   1.
+
+      En el Explorador de objetos, expanda Seguridad, expanda Inicios de sesión, haga clic con el botón secundario en sa y, a continuación, haga clic en Propiedades.
+   2.
+
+      En la página General, podría tener que crear y confirmar una contraseña para el inicio de sesión de sa.
+   3.
+
+      En la página Estado, en la sección Inicio de sesión, haga clic en Habilitado y, a continuación, en Aceptar.

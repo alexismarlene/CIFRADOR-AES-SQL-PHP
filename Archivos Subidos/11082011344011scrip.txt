@@ -1,0 +1,11 @@
+CREATE TABLE [dbo].[ClientesPrueba](
+       [IdEmpleado] [int] IDENTITY(1,1) NOT NULL,
+       [Nombre] [nvarchar](50) NULL,
+       [Telefono] [nvarchar](50) NULL,
+       [Cargo] [nvarchar](50) NULL,
+       [NumeroInterno] [nvarchar](50) NULL,
+       [Archivo] [nvarchar](50) NULL,
+       [Password] [nvarchar](max) NULL
+) ON [PRIMARY]
+
+GO
